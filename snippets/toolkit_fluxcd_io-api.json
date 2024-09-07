@@ -1,6 +1,9 @@
 {
   "Kubernetes Flux GitRepository": {
-    "prefix": ["kgitrepo", "k-gitrepo", "kgitrepository", "k-gitrepository"],
+    "prefix": [
+      "kgitrepo",
+      "kgitrepository"
+    ],
     "description": "Kubernetes Flux GitRepository",
     "body": [
       "---",
@@ -19,9 +22,11 @@
       "    name: ${6:flux-system}$0"
     ]
   },
-
   "Kubernetes Flux OCIRepository": {
-    "prefix": ["kocirepo", "k-ocirepo", "kocirepository", "k-ocirepository"],
+    "prefix": [
+      "kocirepo",
+      "kocirepository"
+    ],
     "description": "Kubernetes Flux OCIRepository",
     "body": [
       "---",
@@ -38,9 +43,11 @@
       "    tag: ${5:main}"
     ]
   },
-
   "Kubernetes Flux HelmRelease": {
-    "prefix": ["khr", "k-hr", "khelmrelease", "k-helmrelease"],
+    "prefix": [
+      "khr",
+      "khelmrelease"
+    ],
     "description": "Kubernetes Flux HelmRelease",
     "body": [
       "---",
@@ -71,9 +78,11 @@
       "    $0"
     ]
   },
-
   "Kubernetes Flux HelmRepository": {
-    "prefix": ["khelmrepo", "k-helmrepo", "khelmrepository", "k-helmrepository"],
+    "prefix": [
+      "khelmrepo",
+      "khelmrepository"
+    ],
     "description": "Kubernetes Flux HelmRepository",
     "body": [
       "---",
@@ -88,9 +97,10 @@
       "  url: ${4:https://prometheus-community.github.io/helm-charts}$0"
     ]
   },
-
   "Kubernetes Flux Kustomization": {
-    "prefix": ["kfluxtomization", "k-fluxtomization"],
+    "prefix": [
+      "kfluxtomization"
+    ],
     "description": "Kubernetes Flux Kustomization",
     "body": [
       "---",
@@ -111,9 +121,10 @@
       "  $0"
     ]
   },
-
   "Kubernetes Flux Alert": {
-    "prefix": ["kalert", "k-alert"],
+    "prefix": [
+      "kalert"
+    ],
     "description": "Kubernetes Flux Alert",
     "body": [
       "---",
@@ -131,9 +142,10 @@
       "      name: ${4:\"*\"}$0"
     ]
   },
-
   "Kubernetes Flux Receiver": {
-    "prefix": ["kreceiver", "k-receiver"],
+    "prefix": [
+      "kreceiver"
+    ],
     "description": "Kubernetes Flux Receiver",
     "body": [
       "---",
@@ -153,9 +165,10 @@
       "      name: ${6:flux-system}$0"
     ]
   },
-
   "Kubernetes Flux Provider": {
-    "prefix": ["kprovider", "k-provider"],
+    "prefix": [
+      "kprovider"
+    ],
     "description": "Kubernetes Flux Provider",
     "body": [
       "---",

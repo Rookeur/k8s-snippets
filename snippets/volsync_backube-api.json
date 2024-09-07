@@ -1,6 +1,8 @@
 {
   "Kubernetes Volsync ReplicationSource Restic": {
-    "prefix": ["kreplicationsource", "k-replicationsource"],
+    "prefix": [
+      "kreplicationsource"
+    ],
     "description": "Kubernetes Volsync ReplicationSource Restic",
     "body": [
       "---",

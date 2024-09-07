@@ -1,10 +1,13 @@
 {
   "Kubernetes ConfigMap": {
-    "prefix": ["kcm", "k-cm", "kconfigmap", "k-configmap"],
+    "prefix": [
+      "kcm",
+      "kconfigmap"
+    ],
     "description": "Kubernetes ConfigMap",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/configmap-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/configmap-v1.json",
       "apiVersion: v1",
       "kind: ConfigMap",
       "metadata:",
@@ -15,13 +18,15 @@
       "  ${2:key}: ${3:value}$0"
     ]
   },
-
   "Kubernetes Deployment": {
-    "prefix": ["kdeploy", "k-deploy", "kdeployment", "k-deployment"],
+    "prefix": [
+      "kdeploy",
+      "kdeployment"
+    ],
     "description": "Kubernetes Deployment",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/deployment-apps-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/deployment-apps-v1.json",
       "apiVersion: v1",
       "kind: Deployment",
       "metadata:",
@@ -87,26 +92,30 @@
       "            value: ${13:value}$0"
     ]
   },
-
   "Kubernetes Namespace": {
-    "prefix": ["knamespace", "k-namespace", "kns", "k-ns"],
+    "prefix": [
+      "knamespace",
+      "kns"
+    ],
     "description": "Kubernetes Namespace",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/namespace-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/namespace-v1.json",
       "apiVersion: v1",
       "kind: Namespace",
       "metadata:",
       "  name: ${1:name}$0"
     ]
   },
-
   "Kubernetes PersistentVolume": {
-    "prefix": ["kpersistentvolume", "k-persistentvolume", "kpv", "k-pv"],
+    "prefix": [
+      "kpersistentvolume",
+      "kpv"
+    ],
     "description": "Kubernetes PersistentVolumeClaim",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/persistentvolume-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/persistentvolume-v1.json",
       "apiVersion: v1",
       "kind: PersistentVolume",
       "metadata:",
@@ -122,13 +131,15 @@
       "  storageClassName: ${5|rook-ceph-block,nfs-provisioner,default|}$0"
     ]
   },
-
   "Kubernetes StorageClass": {
-    "prefix": ["kstorageclass", "k-storageclass", "ksc", "k-sc"],
+    "prefix": [
+      "kstorageclass",
+      "ksc"
+    ],
     "description": "Kubernetes StorageClass",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/storageclass-storage-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/storageclass-storage-v1.json",
       "apiVersion: v1",
       "kind: StorageClass",
       "metadata:",
@@ -140,13 +151,15 @@
       "reclaimPolicy: ${4|Delete,Retain,Recycle|}$0"
     ]
   },
-
   "Kubernetes PersistentVolumeClaim": {
-    "prefix": ["kpersistentvolumeclaim", "k-persistentvolumeclaim", "kpvc", "k-pvc"],
+    "prefix": [
+      "kpersistentvolumeclaim",
+      "kpvc"
+    ],
     "description": "Kubernetes PersistentVolumeClaim",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/persistentvolumeclaim-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/persistentvolumeclaim-v1.json",
       "apiVersion: v1",
       "kind: PersistentVolumeClaim",
       "metadata:",
@@ -162,13 +175,14 @@
       "  storageClassName: ${4|rook-ceph-block,nfs-provisioner,default|}$0"
     ]
   },
-
   "Kubernetes Secret": {
-    "prefix": ["ksecret", "k-secret"],
+    "prefix": [
+      "ksecret"
+    ],
     "description": "Kubernetes Secret",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/secret-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/secret-v1.json",
       "apiVersion: v1",
       "kind: Secret",
       "metadata:",
@@ -180,13 +194,15 @@
       "  $0"
     ]
   },
-
   "Kubernetes Service": {
-    "prefix": ["kservice", "k-service", "ksvc", "k-svc"],
+    "prefix": [
+      "kservice",
+      "ksvc"
+    ],
     "description": "Kubernetes Service",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/service-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/service-v1.json",
       "apiVersion: v1",
       "kind: Service",
       "metadata:",
@@ -204,13 +220,14 @@
       "  type: ClusterIP$0"
     ]
   },
-
   "Kubernetes Job": {
-    "prefix": ["kjob", "k-job"],
+    "prefix": [
+      "kjob"
+    ],
     "description": "Kubernetes Job",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/job-batch-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/job-batch-v1.json",
       "apiVersion: batch/v1",
       "kind: Job",
       "metadata:",
@@ -243,13 +260,15 @@
       "      restartPolicy: ${10|OnFailure,Never|}$0"
     ]
   },
-
   "Kubernetes CronJob": {
-    "prefix": ["kcronjob", "k-cronjob", "kcj", "k-cj"],
+    "prefix": [
+      "kcronjob",
+      "kcj"
+    ],
     "description": "Kubernetes CronJob",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/cronjob-batch-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/cronjob-batch-v1.json",
       "apiVersion: batch/v1",
       "kind: CronJob",
       "metadata:",
@@ -270,13 +289,15 @@
       "          restartPolicy: ${10|OnFailure,Never|}$0"
     ]
   },
-
   "Kubernetes Ingress": {
-    "prefix": ["kingress", "k-ingress", "king", "k-ing"],
+    "prefix": [
+      "kingress",
+      "king"
+    ],
     "description": "Kubernetes Ingress with Rewrite rule",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/ingress-networking-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/ingress-networking-v1.json",
       "apiVersion: networking.k8s.io/v1",
       "kind: Ingress",
       "metadata:",
@@ -303,13 +324,15 @@
       "        - ${5:example.foo.com}$0"
     ]
   },
-
   "Kubernetes Pod": {
-    "prefix": ["kpod", "k-pod", "kpo", "k-po"],
+    "prefix": [
+      "kpod",
+      "kpo"
+    ],
     "description": "Kubernetes Pod",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/pod-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/pod-v1.json",
       "apiVersion: v1",
       "kind: Pod",
       "metadata:",
@@ -347,13 +370,15 @@
       "  restartPolicy: Always$0"
     ]
   },
-
   "Kubernetes DaemonSet": {
-    "prefix": ["kdaemonset", "k-daemonset", "kds", "k-ds"],
+    "prefix": [
+      "kdaemonset",
+      "kds"
+    ],
     "description": "Kubernetes DaemonSet",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/daemonset-apps-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/daemonset-apps-v1.json",
       "apiVersion: apps/v1",
       "kind: DaemonSet",
       "metadata:",
@@ -387,13 +412,15 @@
       "          ${10|hostPath:\n            path: /usr/share/zoneinfo,emptyDir: {},persistentVolumeClaim:\n            claimName: ,configMap:\n            name: ,secret:\n            secretName: |}"
     ]
   },
-
   "Kubernetes StatefulSet": {
-    "prefix": ["kstatefulset", "k-statefulset", "ksts", "k-sts"],
+    "prefix": [
+      "kstatefulset",
+      "ksts"
+    ],
     "description": "Kubernetes StatefulSet",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/statefulset-apps-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/statefulset-apps-v1.json",
       "apiVersion: apps/v1",
       "kind: StatefulSet",
       "metadata:",
@@ -431,13 +458,15 @@
       "            storage: ${9:1Gi}$0"
     ]
   },
-
   "Kubernetes Endpoints": {
-    "prefix": ["kendpoints", "k-endpoints", "kep", "k-ep"],
+    "prefix": [
+      "kendpoints",
+      "kep"
+    ],
     "description": "Kubernetes Endpoints",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/endpoints-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/endpoints-v1.json",
       "apiVersion: v1",
       "kind: Endpoints",
       "metadata:",
@@ -453,13 +482,15 @@
       "        protocol: ${5|TCP,UDP|}$0"
     ]
   },
-
   "Kubernetes ServiceAccount": {
-    "prefix": ["kserviceaccount", "k-serviceaccount", "ksa", "k-sa"],
+    "prefix": [
+      "kserviceaccount",
+      "ksa"
+    ],
     "description": "Kubernetes ServiceAccount",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/serviceaccount-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/serviceaccount-v1.json",
       "apiVersion: v1",
       "kind: ServiceAccount",
       "metadata:",
@@ -468,13 +499,14 @@
       "    app.kubernetes.io/name: ${1:name}$0"
     ]
   },
-
   "Kubernetes ClusterRoleBinding": {
-    "prefix": ["kclusterrolebinding", "k-clusterrolebinding"],
+    "prefix": [
+      "kclusterrolebinding"
+    ],
     "description": "Kubernetes ClusterRoleBinding",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/clusterrolebinding-rbac-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/clusterrolebinding-rbac-v1.json",
       "apiVersion: rbac.authorization.k8s.io/v1",
       "kind: ClusterRoleBinding",
       "metadata:",
@@ -491,13 +523,14 @@
       "    namespace: ${3:default}$0"
     ]
   },
-
   "Kubernetes RoleBinding": {
-    "prefix": ["krolebinding", "k-rolebinding"],
+    "prefix": [
+      "krolebinding"
+    ],
     "description": "Kubernetes RoleBinding",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/rolebinding-rbac-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/rolebinding-rbac-v1.json",
       "apiVersion: rbac.authorization.k8s.io/v1",
       "kind: RoleBinding",
       "metadata:",
@@ -514,13 +547,14 @@
       "    namespace: ${3:default}$0"
     ]
   },
-
   "Kubernetes ClusterRole": {
-    "prefix": ["kclusterrole", "k-clusterrole"],
+    "prefix": [
+      "kclusterrole"
+    ],
     "description": "Kubernetes ClusterRole",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/clusterrole-rbac-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/clusterrole-rbac-v1.json",
       "apiVersion: rbac.authorization.k8s.io/v1",
       "kind: ClusterRole",
       "metadata:",
@@ -536,13 +570,14 @@
       "      - ${4:create}$0"
     ]
   },
-
   "Kubernetes Role": {
-    "prefix": ["krole", "k-role"],
+    "prefix": [
+      "krole"
+    ],
     "description": "Kubernetes Role",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/role-rbac-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/role-rbac-v1.json",
       "apiVersion: rbac.authorization.k8s.io/v1",
       "kind: Role",
       "metadata:",
@@ -558,13 +593,14 @@
       "      - ${4:create}$0"
     ]
   },
-
   "Kubernetes NetworkPolicy": {
-    "prefix": ["knetworkpolicy", "k-networkpolicy"],
+    "prefix": [
+      "knetworkpolicy"
+    ],
     "description": "Kubernetes NetworkPolicy",
     "body": [
       "---",
-      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.28.0-standalone-strict/networkpolicy-networking-v1.json",
+      "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/networkpolicy-networking-v1.json",
       "apiVersion: networking.k8s.io/v1",
       "kind: NetworkPolicy",
       "metadata:",
@@ -575,9 +611,10 @@
       "  $0"
     ]
   },
-
   "Kubernetes Kustomization": {
-    "prefix": ["kkustomization", "k-kustomization"],
+    "prefix": [
+      "kkustomization"
+    ],
     "description": "Kubernetes Kustomization",
     "body": [
       "---",

@@ -1,6 +1,9 @@
 {
   "Kubernetes PodMonitor Prometheus": {
-    "prefix": ["kpmon", "k-pmon", "kpodmonitor", "k-podmonitor"],
+    "prefix": [
+      "kpmon",
+      "kpodmonitor"
+    ],
     "description": "Kubernetes PodMonitor Prometheus",
     "body": [
       "---",
@@ -22,9 +25,11 @@
       "      scheme: ${7:http}$0"
     ]
   },
-
   "Kubernetes ServiceMonitor Prometheus": {
-    "prefix": ["ksmon", "k-smon", "kservicemonitor", "k-servicemonitor"],
+    "prefix": [
+      "ksmon",
+      "kservicemonitor"
+    ],
     "description": "Kubernetes ServiceMonitor Prometheus",
     "body": [
       "---",
@@ -46,9 +51,11 @@
       "      scheme: ${7:http}$0"
     ]
   },
-
   "Kubernetes PrometheusRule Prometheus": {
-    "prefix": ["kpromrule", "k-promrule", "kprometheusrule", "k-prometheusrule"],
+    "prefix": [
+      "kpromrule",
+      "kprometheusrule"
+    ],
     "description": "Kubernetes PrometheusRule Prometheus",
     "body": [
       "---",
