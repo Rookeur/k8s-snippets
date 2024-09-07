@@ -25,6 +25,10 @@
         "language": "yaml",
         "path": "./snippets/monitoring_coreos-api.json"
       },
+      {
+        "language": "yaml",
+        "path": "./snippets/metallb_io-api.json"
+      }
     ]
   }
 }
